@@ -2,12 +2,18 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import textUtils from "../../Assets/Projects/textUtils.png";
+import talentBridge from "../../Assets/Projects/TalentBridge.png";
+import iNotebook from "../../Assets/Projects/inoteBook.png";
+import alarmSys from "../../Assets/Projects/alarmSys.png";
+import newsXplorer from "../../Assets/Projects/newsXplorer.png";
+import iframe from "../../Assets/Projects/iFrame.png";
+import bookstore from "../../Assets/Projects/bookStore.png";
+import imgCaption from "../../Assets/Projects/imgCaption.png";
+import stackOverflow from "../../Assets/Projects/stackOverflow.png";
+import bingeShow from "../../Assets/Projects/bingeShow.png";
+import tindog from "../../Assets/Projects/tinDog.png";
+import taskBoard from "../../Assets/Projects/taskBoard.png";
 
 function Projects() {
   return (
@@ -20,71 +26,152 @@ function Projects() {
         <p style={{ color: "white" }}>
           Here are a few projects I've worked on recently.
         </p>
+        <h1 className="project-heading">
+          <strong className="purple">Internship Projects </strong>
+        </h1>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={iframe}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="iFrame @ADIMIS"
+              description="Designed and developed front-end for Netherland based chiptuning company in which user can enter car license plate number/ choose their car manually from menu and can see the customization options for their car and can get quote information."
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={bookstore}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Bookstore @Tatvasoft Pvt. Ltd."
+              description="As a part of summer internship at Tatvasoft, I have created project using company's API and developed Bookstore project with role based authentication and functionalities using reactjs, javascript and material ui. "
+              ghLink="https://github.com/dishajadav12/bookstore"
+            />
+          </Col>
+        </Row>
+      </Container>
+
+      {/* College Projects */}
+
+      <Container>
+        <h1 className="project-heading">
+          <strong className="purple">College Projects </strong>
+        </h1>
+        <p style={{ color: "white" }}>
+          Here are a few projects I've worked during my academic curriculum.
+        </p>
+        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={alarmSys}
+              isBlog={false}
+              title="Automatic vehicle accident alarm system ( IOT final project) "
+              description="Created a NodeMCU and MPU6050-based system to improve emergency response for road accident victims. Integrated sensors, micro-controllers, GPS, and communication modules for optimal functionality. Utilized various protocols including cellular, Wi-Fi, Bluetooth, SMS, and app-based communication."
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={imgCaption}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="Image caption generator (AI/ML)"
+              description="
+I designed and implemented an Image Caption Generator as a deep learning project for my portfolio. Its purpose is to autonomously produce descriptive captions for images. The system employs a convolutional neural network (CNN) to extract image features and a recurrent neural network (RNN) to generate text. It's trained on extensive datasets like COCO or Flickr30k, incorporating an attention mechanism for improved caption generation.
+"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={stackOverflow}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="Stack Overflow Clone"
+              description="I created a Stack Overflow clone using the MERN stack. This platform mimics the functionality of Stack Overflow, allowing users to ask questions, provide answers, and engage in discussions on various topics. It features user authentication, question posting, answer submission, and upvoting/downvoting. The MERN stack provides a robust foundation for building scalable and efficient web applications, ensuring seamless interaction and real-time updates for users."
+              ghLink="https://github.com/dishajadav12/Stack_Overflow_client"
+              demoLink=" https://stack-overflow-client-fawn.vercel.app/"
             />
           </Col>
+        </Row>
+      </Container>
 
+      {/* Personal Projects */}
+      <Container>
+        <h1 className="project-heading">
+          <strong className="purple">Personal Projects </strong>
+        </h1>
+        <p style={{ color: "white" }}>
+          Projects that I've developed during my free time as a part of learning
+          and growing.
+        </p>
+        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={iNotebook}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+              title="iNoteBook"
+              description="Designed and Created digital note taking website from which user can add and modify their notes accordingly. Used MongoDB to store and manage user and notes data. Used CSS and Bootstrap for responsive design. Technology used: HTML5, CSS3, Bootstrap, JavaScript, React.js, Node.js, express.js.                   "
+              ghLink="https://github.com/dishajadav12/Inotebook_Client"
+              demoLink=" https://inotebook-client-eight.vercel.app/"
             />
           </Col>
-
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={emotion}
+              imgPath={textUtils}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              title="Text utils"
+              description="My first reactjs project with functionalities which provides basic text utilities like number of words and letters, and other differnt filtration options."
+              ghLink="https://github.com/dishajadav12/TextUtils"
+              demoLink="https://text-utils-beta-three.vercel.app/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={newsXplorer}
+              isBlog={false}
+              title="NewsXplorer"
+              description="News website crrated using reactjs and bootstrap libraries which fetches data from NewsAPI and provides daily news articles. I have also added functionalities like infinite scrolling and filter news according categories of news in this app"
+              ghLink="https://github.com/dishajadav12/newsxplorer"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={bingeShow}
+              isBlog={false}
+              title="Binge show"
+              description="Developed a ReactJS project that uses the TVMaze API to display a list of TV shows and their details. The first screen displays the list of shows with some basic information, and the second screen shows the summary of a selected show."
+              ghLink="https://github.com/dishajadav12/bingeShow"
+              demoLink="https://charming-queijadas-97a350.netlify.app/"
+            />
+          </Col>{" "}
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={taskBoard}
+              isBlog={false}
+              title="Task Board"
+              description="Developed single page web app to manage tasks using reactjs. User can perform CRUD operations and can drag and drop tasks according to the stage of task."
+              ghLink="https://github.com/dishajadav12/Task-Board"
+              demoLink="https://652927227aab9b1c45450823--taupe-longma-45a436.netlify.app/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={talentBridge}
+              isBlog={false}
+              title="Talent Bridge"
+              description="Designed a landing page using reactjs and design libraries which has unique and eyecatiching UI."
+              ghLink="https://github.com/dishajadav12/talent_bridge"
+              demoLink="https://talent-bridge-beta.vercel.app/
+"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={tindog}
+              isBlog={false}
+              title="Tin Dog"
+              description="My first ever landing page designed using HTML5, CSS3 and Bootstrap."
+              ghLink="https://github.com/dishajadav12/TinDog"
+              demoLink="https://6616544be7ebdb064ceaf44b--animated-madeleine-ef2f94.netlify.app/"
             />
           </Col>
         </Row>
